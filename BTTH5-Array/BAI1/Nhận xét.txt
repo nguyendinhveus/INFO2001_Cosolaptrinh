@@ -1,0 +1,2 @@
+Kết quả thời gian trung bình khi sắp xếp một dãy bằng Selection Sort nhanh hơn nhanh hơn sắp xếp bằng Bubble Sort.
+Nhưng trong một số trường hợp Bubble Sort có thể nhanh hơn 
