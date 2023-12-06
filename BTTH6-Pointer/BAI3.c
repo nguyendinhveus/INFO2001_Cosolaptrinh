@@ -47,7 +47,7 @@ int main() {
 
     if (books == NULL) {
         printf("Khong the cap phat bo nho dong.\n");
-        return 1;
+        exit(1);
     }
 
     addBook(books, size);
