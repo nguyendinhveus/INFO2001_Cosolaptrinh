@@ -14,9 +14,11 @@ void addBook(Book* books, int size) {
 	for ( i = 0; i < size; i++) {
         printf("Nhap thong tin sach thu %d:\n", i + 1);
         printf("Ten sach: ");
-        scanf(" %[^\n]s", books[i].title);
+	getchar();
+	fgets(books[i].title, 100, stdin);
         printf("Tac gia: ");
-        scanf(" %[^\n]s", books[i].author);
+        getchar();
+	fgets(books[i].author, 100, stdin);
         printf("Gia sach: ");
         scanf("%f", &books[i].price);
         printf("\n");
@@ -47,7 +49,7 @@ int main() {
 
     if (books == NULL) {
         printf("Khong the cap phat bo nho dong.\n");
-        return 1;
+        exit(1);
     }
 
     addBook(books, size);
